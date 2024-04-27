@@ -1,0 +1,102 @@
+/*applying styles to the body*/
+body{
+  font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+    background: skyblue 
+}
+header {
+  background-color:white;
+  color:hotpink;
+  padding:20px;
+}
+.acount-links a {
+  color:#fff;
+  text-decoration:none;
+  margin-left:10px;
+}
+.account-links a:hover{
+  text-decoration: underline;
+}
+/*applying styles to the h1*/
+h1 {
+  text-align: center;
+  color: blueviolet;
+   margin:0;
+}
+.dog-details:{
+  background-color:skyblue;
+  padding:20px;
+  margin:20px;
+  border_radius:5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p {
+  color:#666
+  margin bottom:10px;
+}
+/*applying style to the image*/
+img {
+  display:block;
+  margin: 0 auto;
+  max-width:100%;
+  height:auto;
+}
+/*applying style to the link*/
+a{
+  display:block;
+  text-align:center;
+  margin-top:20px;
+  color:hotpink;
+  text-decoration:none;
+}
+form {
+  max-width:500px;
+  margin:0 auto;
+  padding:20px;
+  background-color:white;
+  border-radius:5px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+label{
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width:100%;
+  padding:10px;
+  margin-bottom:20px;
+  border:1px solid #ccc;
+  border-radius: 4px;
+   box-sizing: border-box;
+}
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+nav ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+nav ul li {
+   display: inline;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+nav ul li a:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}

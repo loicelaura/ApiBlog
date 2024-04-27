@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset"UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>DOG ADOPTION </title>
+    </head>
+  <body>
+    <header>
+      <h1> DOG ADOPTION AGENCY</h2>
+      {{result}}
+    <img src= {{result}} alt= "random pet"/>
+   <br>
+      <h2>Dog Adoption </h2>
+    <a href="{% url 'dog_view' %}">Try Another</a>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'adopt_dog' %}">Adopt a Dog</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <section>
+    <h2>Client details </h2>
+
+      <form method="post">
+         {% csrf_token %}
+         {{ form.as_p }}
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        <button type="submit">Submit</button>
+    </form>
+  </section>
+    <footer>
+       <p>&copy; 2024 Dog Adoption. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
